@@ -42,7 +42,14 @@ public class SVNgido {
     }
 
     public static void showTasks() {
-        
+        System.out.println("\n--- Danh sach nhiem vu ---");
+        if (tasks.isEmpty()) {
+            System.out.println("Chua co du lieu.");
+        } else {
+            for (String t : tasks) {
+                System.out.println("- " + t);
+            }
+        }
     }
 
     public static void deleteTask(){
