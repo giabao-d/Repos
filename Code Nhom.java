@@ -43,7 +43,13 @@ public class SVNgido {
     }
 
     public static void deleteTask(){
-        
+        System.out.print("Nhap ten cong viec can xoa: ");
+        String task = scanner.nextLine();
+        if (tasks.remove(task)) {
+            System.out.println("=> Da xoa thanh cong!");
+        } else {
+            System.out.println("=> Cong viec khong ton tai!");
+        }
     }
 
     public static void editTask() {
